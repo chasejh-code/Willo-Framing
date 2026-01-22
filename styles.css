@@ -294,11 +294,14 @@ footer {
 }
 /* ===================== MOBILE FIXES ===================== */
 
+/* ===================== MOBILE FIXES ===================== */
 @media (max-width: 768px) {
+
+  /* ----- LOGO SHIFT ----- */
   .logo {
-    transform: translateX(25px); /* adjust 10–25px depending on taste */
+    transform: translateX(25px);
   }
-}
+
   /* ----- GLOBAL ----- */
   body {
     overflow-x: hidden;
@@ -327,11 +330,11 @@ footer {
 
   /* ----- CAROUSEL ----- */
   .carousel-track {
-    width: max-content; /* prevents forced 15% overflow */
+    width: max-content;
   }
 
   .carousel-track img {
-    width: 120px; /* fixed safe size for mobile */
+    width: 120px;
     padding: 5px;
     border-radius: 40px;
   }
@@ -390,4 +393,6 @@ footer {
     --lottie-player-width: 220px;
     --lottie-player-height: 220px;
   }
-  
+
+} 
+/* ===================== END MOBILE FIXES ===================== */
