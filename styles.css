@@ -292,3 +292,99 @@ footer {
   color: white;
   cursor: pointer;
 }
+/* ===================== MOBILE FIXES ===================== */
+
+@media (max-width: 768px) {
+
+  /* ----- GLOBAL ----- */
+  body {
+    overflow-x: hidden;
+  }
+
+  section {
+    margin-left: 10px !important;
+    margin-right: 10px !important;
+  }
+
+  /* ----- HEADER ----- */
+  header {
+    flex-direction: column;
+    gap: 20px;
+    padding: 20px;
+  }
+
+  .header-lottie {
+    width: 70%;
+    height: auto;
+  }
+
+  .logo {
+    max-width: 80%;
+  }
+
+  /* ----- CAROUSEL ----- */
+  .carousel-track {
+    width: max-content; /* prevents forced 15% overflow */
+  }
+
+  .carousel-track img {
+    width: 120px; /* fixed safe size for mobile */
+    padding: 5px;
+    border-radius: 40px;
+  }
+
+  /* ----- SPLIT SECTION ----- */
+  .split-section {
+    flex-direction: column;
+    text-align: center;
+    padding: 20px;
+  }
+
+  .text-side,
+  .animation-side {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+  }
+
+  /* ----- CENTERED SECTION ----- */
+  .centered-section {
+    margin-left: 10px;
+    margin-right: 10px;
+    padding: 25px;
+  }
+
+  .centered-section ul {
+    text-align: left;
+  }
+
+  /* ----- SPANISH SECTION ----- */
+  .spanish-section {
+    margin-left: 20px;
+    margin-right: 20px;
+    padding: 20px;
+  }
+
+  .spanish-section p {
+    font-size: 2rem;
+  }
+
+  /* ----- FOOTER ----- */
+  footer {
+    flex-direction: column;
+    text-align: center;
+    gap: 40px;
+  }
+
+  .contact-info,
+  .footer-animation,
+  .contact-form {
+    width: 100%;
+    margin: 0;
+  }
+
+  .footer-animation lottie-player {
+    --lottie-player-width: 220px;
+    --lottie-player-height: 220px;
+  }
+}
