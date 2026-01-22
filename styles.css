@@ -294,33 +294,41 @@ footer {
 }
 
 /* ===================== MOBILE FIXES ===================== */
-@media (max-width: 768px) {
 
-  /* ----- LOGO VIGNETTE ----- */
-  .logo {
+ @media (max-width: 768px) {
+
+  /* ----- LOGO WRAP VIGNETTE (WORKING VERSION) ----- */
+  .logo-wrap {
     position: relative;
-    z-index: 2;
-    order: 1;
-    transform: translateX(20px);
-    max-width: 80%;
+    display: inline-block;
+    z-index: 1;
   }
 
-  .logo::before {
-    content: '';
+  .logo-wrap::before {
+    content: "";
     position: absolute;
     top: 50%;
     left: 50%;
-    width: 140%;
-    height: 140%;
+    width: 150%;
+    height: 150%;
     transform: translate(-50%, -50%);
     background: radial-gradient(
       rgba(255, 255, 255, 0.35) 0%,
       rgba(255, 255, 255, 0.15) 40%,
       rgba(255, 255, 255, 0) 80%
     );
-    border-radius: 0; /*makes a square vignette*/
+    filter: blur(14px);
     z-index: -1;
-    filter: blur(15px);
+  }
+
+  /* ----- LOGO POSITIONING ----- */
+  .logo {
+    position: relative;
+    z-index: 2;
+    order: 1;
+    transform: translateX(20px);
+    max-width: 80%;
+    display: block; /* helps with centering */
   }
 
   /* ----- LOTTIE ORDER ----- */
@@ -413,5 +421,5 @@ footer {
     --lottie-player-height: 220px;
   }
 
-} 
-/* ===================== END MOBILE FIXES ===================== */
+}
+
