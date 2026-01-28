@@ -183,7 +183,14 @@
   <script src="https://www.google.com/recaptcha/api.js?render=6LfQXVgsAAAAABCptEp_JfL1BajZmJ5iq3kPSHSf"></script>
   <script src="javascript/form.js"></script>
   <script src="javascript/scripts.js"></script>
-
+  <script>
+    document.addEventListener("DOMContentLoaded", () => {
+      document.querySelectorAll(".fade-up").forEach(el => {
+        el.classList.add("visible");
+      });
+    });
+  </script>
+  
 </body>
 </html>
 
