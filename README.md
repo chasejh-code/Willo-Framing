@@ -2,7 +2,8 @@ This is just a small side project for my brothers company.
 
 I have implemented, to the best of my limited ability, all my online research and coding skills into this website.
 By no means am I a web developer, my expertise come from youtube , freecodecamp tutorials and other free courses.
-My IT background is minimal, but this is something im dabbling in while learning cyber security and cloud security.
+My IT background is minimal, but this is something I am dabbling in while learning about and transitioning into IT, 
+specifically the realm of cyber security .
 
 
 # Willo Framing LLC Website
