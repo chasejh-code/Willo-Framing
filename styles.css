@@ -129,7 +129,7 @@
   .carousel-track {
     display: flex;
     width: calc(10 * 15%);
-    animation: scroll 30s linear infinite;
+    animation: scroll 25s linear infinite;
     will-change: transform;
   }
   
